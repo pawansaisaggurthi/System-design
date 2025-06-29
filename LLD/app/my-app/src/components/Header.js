@@ -12,12 +12,13 @@ const Header =  ({lang,setLang}) =>{
             <option value="te">Telugu</option>
         </select>
 
-        <div className='justify-between'>
-          <nav className='justify-space-between'>
+        <div className='justify-between w-[300px]'>
+          <nav className="justify-between">
             <a href='/'>Home</a>
             <a href='/teams'>Teams</a>
             <a href='/login'>Login</a>
             <a href='/about'>About</a>
+            <a href='/accordion'>Accordion</a>
           </nav>
         </div>
 

@@ -7,6 +7,7 @@ import Teams from './components/Teams';
 import Header from './components/Header';
 import { useState } from "react";
 import About from './components/About';
+import Accordion from './components/Accordion';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           </Route>
           <Route path='/login' element={<Login />}></Route>
           <Route path='/about' element={<About lang={lang}/>}></Route>
+          <Route path='/accordion' element={<Accordion/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
