@@ -4,22 +4,18 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from './components/Login';
 import ProtectedRoutes from './components/ProtectedRoutes';
 import Teams from './components/Teams';
+import Header from './components/Header';
+import { useState } from "react";
+import About from './components/About';
+
 
 function App() {
+
+      const [lang,setLang] = useState("en")
+  
   return (
     <div className="App">
-      <header className='bg-black text-white py-4 flex justify-between'>
-        <div>Hello</div>
-        <div className='justify-between'>
-          <nav className='justify-space-between'>
-            <a href='/'>Home</a>
-            <a href='/teams'>Teams</a>
-            <a href='/login'>Login</a>
-          </nav>
-        </div>
-
-      </header>
-
+      <Header lang={lang} setLang={setLang}/>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Body />}></Route>
@@ -30,6 +26,7 @@ function App() {
             <Route path='/teams' element={<Teams />}></Route>
           </Route>
           <Route path='/login' element={<Login />}></Route>
+          <Route path='/about' element={<About lang={lang}/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
