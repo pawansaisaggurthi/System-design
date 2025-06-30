@@ -8,6 +8,7 @@ import Header from './components/Header';
 import { useState } from "react";
 import About from './components/About';
 import Accordion from './components/Accordion';
+import Comments from './components/comments/comments';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path='/login' element={<Login />}></Route>
           <Route path='/about' element={<About lang={lang}/>}></Route>
           <Route path='/accordion' element={<Accordion/>}></Route>
+          <Route path='/comments' element={<Comments/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

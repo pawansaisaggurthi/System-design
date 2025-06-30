@@ -19,6 +19,7 @@ const Header =  ({lang,setLang}) =>{
             <a href='/login'>Login</a>
             <a href='/about'>About</a>
             <a href='/accordion'>Accordion</a>
+            <a href='/comments'>Comments</a>
           </nav>
         </div>
 
