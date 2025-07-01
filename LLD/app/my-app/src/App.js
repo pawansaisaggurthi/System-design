@@ -9,6 +9,7 @@ import { useState } from "react";
 import About from './components/About';
 import Accordion from './components/Accordion';
 import Comments from './components/comments/comments';
+import ImageSlider from './components/image-slider/ImageSlider';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path='/about' element={<About lang={lang}/>}></Route>
           <Route path='/accordion' element={<Accordion/>}></Route>
           <Route path='/comments' element={<Comments/>}></Route>
+          <Route path='/imageSlider' element={<ImageSlider/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

@@ -3,23 +3,25 @@ const Header =  ({lang,setLang}) =>{
 
     return (
              <header className='bg-black text-white py-4 flex justify-between'>
-        <div>Hello</div>
+        <div className="ms-2">Hello</div>
 
-        <select className="bg-black text-white border border-white rounded-sm" value={lang} onChange={(e) => setLang(e.target.value)}>
+
+
+        <div className='justify-between flex'>
+            <select className="bg-black text-white border border-white rounded-sm me-2" value={lang} onChange={(e) => setLang(e.target.value)}>
             <option value="en">English</option>
             <option value="hi">Hindi</option>
             <option value="sp">Spanish</option>
             <option value="te">Telugu</option>
         </select>
-
-        <div className='justify-between w-[300px]'>
           <nav className="justify-between">
-            <a href='/'>Home</a>
-            <a href='/teams'>Teams</a>
-            <a href='/login'>Login</a>
-            <a href='/about'>About</a>
-            <a href='/accordion'>Accordion</a>
-            <a href='/comments'>Comments</a>
+            <a className="mx-2" href='/'>Home</a>
+            <a className="mx-2" href='/teams'>Teams</a>
+            <a className="mx-2" href='/login'>Login</a>
+            <a className="mx-2" href='/about'>About</a>
+            <a className="mx-2" href='/accordion'>Accordion</a>
+            <a className="mx-2" href='/comments'>Comments</a>
+            <a className="mx-2" href='/imageSlider'>ImageSlider</a>
           </nav>
         </div>
 
