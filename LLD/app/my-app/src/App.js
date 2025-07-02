@@ -11,6 +11,7 @@ import Accordion from './components/Accordion';
 import Comments from './components/comments/comments';
 import ImageSlider from './components/image-slider/ImageSlider';
 import Pagination from './components/pagination/Pagination';
+import YoutubeChat from './components/youtube-chat/YoutubeChat';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path='/accordion' element={<Accordion/>}></Route>
           <Route path='/comments' element={<Comments/>}></Route>
           <Route path='/pagination' element={<Pagination/>}></Route>
+          <Route path='/youtubeChat' element={<YoutubeChat/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

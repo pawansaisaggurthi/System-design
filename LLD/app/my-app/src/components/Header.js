@@ -23,6 +23,7 @@ const Header = ({ lang, setLang }) => {
           <a className="mx-2" href='/comments'>Comments</a>
           <a className="mx-2" href='/imageSlider'>Image-Slider</a>
           <a className="mx-2" href='/pagination'>Pagination</a>
+          <a className="mx-2" href='/youtubeChat'>YoutubeChat</a>
         </nav>
       </div>
 
