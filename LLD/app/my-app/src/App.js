@@ -10,6 +10,7 @@ import About from './components/About';
 import Accordion from './components/Accordion';
 import Comments from './components/comments/comments';
 import ImageSlider from './components/image-slider/ImageSlider';
+import Pagination from './components/pagination/Pagination';
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
           <Route path='/about' element={<About lang={lang}/>}></Route>
           <Route path='/accordion' element={<Accordion/>}></Route>
           <Route path='/comments' element={<Comments/>}></Route>
-          <Route path='/imageSlider' element={<ImageSlider/>}></Route>
+          <Route path='/pagination' element={<Pagination/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

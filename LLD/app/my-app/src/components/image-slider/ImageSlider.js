@@ -8,9 +8,7 @@ const ImageSlider = () => {
         const t = setInterval(() => {
             nextImage()
         }, 4000);
-
         return () => clearInterval(t)
-
     }, [])
 
     const images = [
@@ -27,16 +25,16 @@ const ImageSlider = () => {
     const nextImage = () => {
         console.log(images.length - 1)
         console.log(active)
-        setActive((active) => images.length - 1 == active ? 0 : active + 1)
+        setActive((active) => images.length - 1 === active ? 0 : active + 1)
     }
 
     return (
         <div className="m-auto justify-center items-center flex mt-4">
-            <img className="w-[300px] h-[200px] rounded-r-lg" alt="img1" onClick={() => prevImage()} src={images[active == 0 ? images.length - 1 : active - 1]} />
+            <img className="w-[300px] h-[200px] rounded-r-lg cursor-pointer" alt="img1" onClick={() => prevImage()} src={images[active === 0 ? images.length - 1 : active - 1]} />
             <img className="w-[600px] h-[200px] mx-2 rounded-lg" alt="img2" src={images[active]} />
-            <img className="w-[300px]  h-[200px] rounded-l-lg" alt="img3" onClick={() => nextImage()} src={images[active == images.length - 1 ? 0 : active + 1]} />
+            <img className="w-[300px]  h-[200px] rounded-l-lg cursor-pointer" alt="img3" onClick={() => nextImage()} src={images[active === images.length - 1 ? 0 : active + 1]} />
         </div>
     )
-}
+} 
 
 export default ImageSlider;
